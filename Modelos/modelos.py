@@ -23,3 +23,9 @@ class Usuario(db.Model):
     id = db.Column (db.Integer, primary_key=True)
     nombre_usuario = db.Column(db.String(128))
     Contraseña = db.Column(db.String(128))
+
+
+class Medio (db.Model):
+    DISCO = db.Column(db.String(128))
+    CASETE = db.Column(db.String(128))
+    CD = db.Column(db.String(128))
